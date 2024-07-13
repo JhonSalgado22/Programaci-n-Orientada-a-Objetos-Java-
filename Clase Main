@@ -1,0 +1,35 @@
+package mx.com.cuh.clases;
+
+public class Main {
+    public static void main(String[] args) {
+        // Instanciacin de objetos Producto
+        Producto producto1 = new Producto(1, "manzana", 50,100);
+        Producto producto2 = new Producto(2, "platano", 16, 150);
+        Producto producto3 = new Producto(3, "yogurth", 24, 120);
+
+        //"datos" para mostrara la informacion de ñps productos
+        producto1.mostrarNombre();
+        producto1.mostrarPrecio();
+        producto1.mostrarExistencias();
+
+        producto2.mostrarNombre();
+        producto2.mostrarPrecio();
+        producto2.mostrarExistencias();
+
+        producto3.mostrarNombre();
+        producto3.mostrarPrecio();
+        producto3.mostrarExistencias();
+
+        // modificamos  los atributos usando métodos set
+        producto1.setPrecio(24);
+        producto1.setExistencias(80);
+        
+        System.out.println("Despues de que modificamos los atributso:");
+        producto1.mostrarNombre();
+        producto1.mostrarPrecio();
+        producto1.mostrarExistencias();
+       
+    }
+    
+    
+}
